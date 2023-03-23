@@ -1,18 +1,22 @@
-#include "main.h"
+#include<stdio.h>
+#include"main.h"
 
 /**
-  * print_alphabet - Make the alphabet
-  *
-  * Return: void
-  */
-void print_alphabet(void)
+ * main - Entry point
+ *
+ * Description: prints _putchar using putchar prototype
+ *
+ * Return: Always 0 (Success)
+*/
+
+int main(void)
 {
-	char c;
+	char str[] = "_putchar";
+	int ch;
 
-	for (c = 'a'; c <= 'z'; c++)
-	{
-		_putchar(c);
-	}
-
+	for (ch = 0; ch < 8; ++ch)
+		_putchar(str[ch]);
 	_putchar('\n');
+
+	return (0);
 }
