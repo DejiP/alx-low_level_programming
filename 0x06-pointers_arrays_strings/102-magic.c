@@ -1,4 +1,4 @@
-#include<stdio.h>
+#include <stdio.h>
 int main(void)
 {
 int n;
@@ -7,13 +7,14 @@ int *p;
 a[2] = 1024;
 p = &n;
 /*
-* - main - Entry point
-* Description: write your line of code here...
+* main - Entry point
+* write your line of code here...
 * - you are not allowed to use a
 * - you are not allowed to modify p
 * - only one statement
 * - you are not allowed to code anything else than this line of code
-* - Return: Always 0 (Success)
+*(p + 5) = 98;
+* Return: Always 0 (Success)
 */
 /* ...so that this prints 98\n */
 printf("a[2] = %d\n", a[2]);
