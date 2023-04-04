@@ -5,15 +5,15 @@
  * @a: input
  * @size: size of matrix
  *
- * Return: 0g
-*/
-
+ * Return: nothing (0)
+ */
 void print_diagsums(int *a, int size)
 {
-  int i = 0;
-  S1 = 0;
-  S2 = 0;
-for (; i < (size * size); i++)
+	 int S1 = 0;
+	 int S2 = 0;
+	 int i = 0;
+
+	for (; i < (size * size); i++)
 	{
 		if (i % (size + 1) == 0)
 			S1 += a[i];
