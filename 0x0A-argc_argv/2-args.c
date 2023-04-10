@@ -2,22 +2,22 @@
 #include <stdlib.h>
 
 /**
- * main - prints all received
+ * main - prints
+ * @argc: number
+ * @argv: pointer containing the arguments passed
  *
- * @argc: number passed
- * @argv: pointer of arguments
- * Description: prints arguments including the first one
+ * Description: prints all arguments including the first one
  *		printing only one argument per line,
  *		ending with a new line
  *
- * Return: 0
+ * Return: Always return 0
 */
 
 int main(int argc, char *argv[])
 {
-	int a;
+	int i;
 
-	for (a = 0; a < argc; i++)
-		printf("%s\n", argv[a]);
+	for (i = 0; i < argc; i++)
+		printf("%s\n", argv[i]);
 	return (0);
 }
