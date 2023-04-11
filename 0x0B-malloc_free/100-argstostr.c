@@ -1,17 +1,17 @@
 #include <stdlib.h>
 
 /**
- * argstostr - concatenates all the arguments of a program
+ * argstostr - a function that concatenates all the arguments of a program
  *
  * @ac: counter
  * @av: holder
  *
- * Return: return a null value 
+ * Return: return a null value
 */
 
 char *argstostr(int ac, char **av)
 {
-	int i, v, k, length;
+	int i, j, k, length;
 	char *str;
 
 	if (ac == 0 || av == NULL)
@@ -19,7 +19,7 @@ char *argstostr(int ac, char **av)
 	length = 0;
 	for (i = 0; i < ac; i++)
 	{
-		for (v = 0; av[i][v] != '\0'; v++)
+		for (j = 0; av[i][j] != '\0'; j++)
 			length++;
 		length++;
 	}
@@ -29,9 +29,9 @@ char *argstostr(int ac, char **av)
 	k = 0;
 	for (i = 0; i < ac; i++)
 	{
-		for (v = 0; av[i][v] != '\0'; v++)
+		for (j = 0; av[i][j] != '\0'; j++)
 		{
-			str[k] = av[i][v];
+			str[k] = av[i][j];
 			k++;
 		}
 		str[k] = '\n';
