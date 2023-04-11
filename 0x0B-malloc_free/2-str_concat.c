@@ -1,19 +1,19 @@
 #include <stdlib.h>
 
 /**
- * str_concat - a function
+ * str_concat - function that concatenates two strings
  *
- * @s1: first string
- * @s2: second string
+ * @s1: first string to input
+ * @s2: second string to input
  *
- * Return: return null
+ * Return: return null or a string
 */
 
 char *str_concat(char *s1, char *s2)
 {
 	int a = 0;
 	int b = 0;
-	int i, n;
+	int i, j;
 	char *s;
 
 	if (s1 == NULL)
@@ -34,9 +34,9 @@ char *str_concat(char *s1, char *s2)
 	for (i = 0; s1[i] != '\0'; i++)
 		s[i] = s1[i];
 	/* add the second string to array s */
-	for (n = 0; s2[j] != '\0'; n++)
+	for (j = 0; s2[j] != '\0'; j++)
 	{
-		s[i] = s2[n];
+		s[i] = s2[j];
 		i++;
 	}
 	s[i] = '\0';
