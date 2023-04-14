@@ -4,14 +4,14 @@
 #include "main.h"
 
 /**
- * _memset - fills with a constant byte
+ * _memset - fills memory with a constant byte
  *
- * @s: pointer that represents memory block
+ * @s: input pointer that represents memory block
+ *     to fill
+ * @b: characters to fill/set
+ * @n: number of bytes to be filled
  *
- * @b: characters to fill
- * @n: number of bytes
- *
- * Return: pointer
+ * Return: pointer to the filled memory area
 */
 
 char *_memset(char *s, char b, unsigned int n)
@@ -27,10 +27,10 @@ char *_memset(char *s, char b, unsigned int n)
 }
 
 /**
- * _calloc - allocates memory
+ * _calloc - function that allocates memory
  *           for an array using memset
  *
- * @nmemb: size
+ * @nmemb: size of array
  * @size: size of each element
  *
  * Return: pointer to new allocated memory
@@ -56,7 +56,7 @@ void *_calloc(unsigned int nmemb, unsigned int size)
  * @s1: string 1
  * @s2: string 2
  *
- * Return: 0
+ * Return: nothing
 */
 
 void multiply(char *s1, char *s2)
