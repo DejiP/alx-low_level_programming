@@ -8,12 +8,12 @@
  * @argc: number of command line
  * @argv: string array holding the command
  *
- * Return: return 0 
+ * Return: return 0
 */
 
 int main(int argc, char *argv[])
 {
-	int i = 0, num_bytes;
+	int i, num_bytes;
 	char *ptr = (char *) main;
 
 	if (argc != 2)
@@ -27,7 +27,7 @@ int main(int argc, char *argv[])
 		printf("Error\n");
 		exit(2);
 	}
-	for (; i < num_bytes; i++)
+	for (i = 0; i < num_bytes; i++)
 	{
 		printf("%02x", ptr[i] & 0xFF);
 		if (i != num_bytes - 1)
