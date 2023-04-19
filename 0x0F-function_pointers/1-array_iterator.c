@@ -1,15 +1,15 @@
 #include <stddef.h>
 
 /**
- * array_iterator - executes a function
+ * array_iterator - function that executes a function
  *		    given as a parameter on each element
  *		    of an array
  *
- * @array: array
+ * @array: array iterate over
  * @size: size
- * @action: pointer
- *
- * Return: return null
+ * @action: pointer to function to call
+ * main- entry point
+ * Return: return a null
 */
 
 void array_iterator(int *array, size_t size, void (*action)(int))
